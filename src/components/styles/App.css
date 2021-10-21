@@ -1,0 +1,40 @@
+@import 'nullstyle.css';
+.app-wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "h h" "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /*grid-gap: 10px;*/
+  width: 100%;
+}
+
+.app-header {
+  grid-area: h;
+  background-color: green;
+}
+
+.app-nominalo {
+  float: left;
+  padding: 5px;
+  margin: 15px 0 0 10px;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  font-family: "Segoe UI", serif;
+}
+
+.app-note {
+  float: right;
+  padding: 5px;
+  margin: 15px 10px 0 0;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  font-family: "Segoe UI", serif;
+}
+
+/*
+#808080*/
+
+/*# sourceMappingURL=App.css.map */

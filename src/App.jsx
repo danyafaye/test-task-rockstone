@@ -1,9 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
+const Header = () => {
+    return(
+        <header className="app-header">
+            <button className="app-nominalo">Варианты набора купюр</button>
+            <button className="app-note">Вызов справки</button>
+        </header>
+    )
+}//вынести в отдельную компоненту с используемыми стилями
+
+const App = () => {
+    return(
+        <div className="app-wrapper">
+        <Header/>
+        {/*<Content/>
+         <Footer/>*/}
+        </div>
+    )
+}
+
+export default App;
+
+/*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +36,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div>*/
