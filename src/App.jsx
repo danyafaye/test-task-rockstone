@@ -1,39 +1,35 @@
 import './components/styles/App.css';
+import Numpad from './components/Numpad/Numpad';
+import React from 'react';
+import AppInput from './components/Content/AppInput/AppInput';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { Route } from 'react-router-dom';
 
-const Header = () => {
-    return(
-        <header className="app-header">
-            <button className="app-nominalo">Варианты набора купюр</button>
-            <button className="app-note">Вызов справки</button>
-        </header>
+const Content = () => {
+    return (
+        <div className="App-content">
+            <AppInput/>
+            <Numpad/>
+        </div>
     )
-}//вынести в отдельную компоненту с используемыми стилями
+}
 
 const App = () => {
-    return(
-        <div className="app-wrapper">
-        <Header/>
-        {/*<Content/>
-         <Footer/>*/}
+    /*const input = document.querySelector(".number")
+    input.addEventListener('onkeyup', () => {
+        this.value = this.value.replace(/[^0-9\\,]/g, '');
+    })*/
+    return (
+        <div className="App-wrapper">
+            <Header/>
+            <Route path="/vars" render={()=><Vars/>}/>
+            <Route path="/note" render={()=><Note/>}/>
+            <Content/>
+            <Footer/>
         </div>
     )
 }
 
 export default App;
 
-/*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
