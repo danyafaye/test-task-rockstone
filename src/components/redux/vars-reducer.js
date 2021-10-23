@@ -61,15 +61,15 @@ const varsReducer = (state = initialState, action) => {
     switch (action.type) {
         case VARS:
             return {
-                ...state,
-
+                ...state,/*
+                state.var[num]*/
             }
         default:
             return state;
     }
 }
 
-//action creator
-const initializedVars = () => {type: 'SN/APP/INITIALIZED_SUCCESS'}
+/*//action creator
+const initializedVars = () => {type: 'APP/VARS', num: }*/
 
 export default varsReducer;
