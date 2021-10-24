@@ -4,18 +4,15 @@ import React from 'react';
 import AppInput from './components/Content/AppInput/AppInput';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import AppOutput from './components/Content/AppOutput/AppOutput';
+import BanknoteVars from './components/BanknoteVars/BanknoteVars';
+import Note from './components/Note/Note';
+import NoteContainer from './components/Note/NoteContainer';
 
-const Content = () => {
-    return (
-        <div className="App-content">
-            <AppInput/>
-            <Numpad/>
-        </div>
-    )
-}
 
-const App = () => {
+const App = (state) => {
+
     /*const input = document.querySelector(".number")
     input.addEventListener('onkeyup', () => {
         this.value = this.value.replace(/[^0-9\\,]/g, '');
@@ -23,9 +20,17 @@ const App = () => {
     return (
         <div className="App-wrapper">
             <Header/>
-            <Route path="/vars" render={()=><Vars/>}/>
-            <Route path="/note" render={()=><Note/>}/>
-            <Content/>
+            <div className="App-content">
+                {/*<Route path="/vars" render={()=><Vars/>}/>
+            <Route path="/note" render={()=><Note/>}/>*/}
+                <NoteContainer/>
+                <AppInput/>
+                <Link to="/output"/>
+                <Route path="/output" render={()=><AppOutput/>}/>
+                <Route path="/vars" render={()=><BanknoteVars/>}/>
+                <Route path="/note" render={()=><Note />}/>
+                <Numpad/>
+            </div>
             <Footer/>
         </div>
     )

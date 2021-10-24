@@ -3,7 +3,7 @@ import varsReducer from './vars-reducer';
 
 let reducers = combineReducers(
     {
-        vars: varsReducer
+        varsR: varsReducer
     }
 )
 

@@ -1,11 +1,12 @@
 import './Header.css';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header className="App-header">
-            <button className="App-nominalo">Варианты набора купюр</button>
-            <button className="App-note">Вызов справки</button>
+            <button className="App-nominalo" onClick={<NavLink to="/vars"/>}>Варианты набора купюр</button>
+            <button className="App-note" onClick={<NavLink to="/note"/>}>Вызов справки</button>
         </header>
     )
 }
