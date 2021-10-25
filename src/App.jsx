@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 import { Redirect, Route } from 'react-router-dom';
 import AppOutput from './components/Content/AppOutput/AppOutput';
 import BanknoteVars from './components/BanknoteVars/BanknoteVars';
-import NoteContainer from './components/Note/NoteContainer';
+import Note from './components/Note/Note';
 
 
 const App = (state) => {
@@ -24,7 +24,7 @@ const App = (state) => {
                 <Route path="/app-input" render={()=><AppInput/>}/>
                 <Route path="/output" render={()=><AppOutput/>}/>
                 <Route path="/vars" render={()=><BanknoteVars/>}/>
-                <Route path="/note" render={()=><NoteContainer/>}/>
+                <Route path="/note" render={()=><Note/>}/>
                 <Numpad/>
             </div>
             <Footer/>
