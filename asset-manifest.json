@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test-task-rockstone/static/css/main.eedadaf9.chunk.css",
+    "main.js": "/test-task-rockstone/static/js/main.b25e6ce5.chunk.js",
+    "main.js.map": "/test-task-rockstone/static/js/main.b25e6ce5.chunk.js.map",
+    "runtime-main.js": "/test-task-rockstone/static/js/runtime-main.00641311.js",
+    "runtime-main.js.map": "/test-task-rockstone/static/js/runtime-main.00641311.js.map",
+    "static/js/2.dd819259.chunk.js": "/test-task-rockstone/static/js/2.dd819259.chunk.js",
+    "static/js/2.dd819259.chunk.js.map": "/test-task-rockstone/static/js/2.dd819259.chunk.js.map",
+    "static/js/3.39ccce65.chunk.js": "/test-task-rockstone/static/js/3.39ccce65.chunk.js",
+    "static/js/3.39ccce65.chunk.js.map": "/test-task-rockstone/static/js/3.39ccce65.chunk.js.map",
+    "index.html": "/test-task-rockstone/index.html",
+    "static/css/main.eedadaf9.chunk.css.map": "/test-task-rockstone/static/css/main.eedadaf9.chunk.css.map",
+    "static/js/2.dd819259.chunk.js.LICENSE.txt": "/test-task-rockstone/static/js/2.dd819259.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00641311.js",
+    "static/js/2.dd819259.chunk.js",
+    "static/css/main.eedadaf9.chunk.css",
+    "static/js/main.b25e6ce5.chunk.js"
+  ]
+}
