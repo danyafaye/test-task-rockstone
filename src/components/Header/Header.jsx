@@ -1,12 +1,15 @@
 import './Header.css';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+/*import { Link } from 'react-router-dom';*/
+
+/*onClick={<Link to="/vars"/>}*/
 
 const Header = () => {
     return (
         <header className="App-header">
-            <button className="App-nominalo" onClick={<NavLink to="/vars"/>}>Варианты набора купюр</button>
-            <button className="App-note" onClick={<NavLink to="/note"/>}>Вызов справки</button>
+            <NavLink to="/vars" className="app-nominalo">Варианты набора купюр</NavLink>
+            <NavLink to="/note" className="app-note">Вызов справки</NavLink>
         </header>
     )
 }

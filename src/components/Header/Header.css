@@ -3,7 +3,7 @@
   background-color: #2C3F59;
 }
 
-.App-nominalo {
+.app-nominalo {
   float: left;
   padding: 5px;
   margin: 15px 0 0 10px;
@@ -15,7 +15,7 @@
   font-family: "Segoe UI", serif;
 }
 
-.App-note {
+.app-note {
   float: right;
   padding: 5px;
   margin: 15px 10px 0 0;

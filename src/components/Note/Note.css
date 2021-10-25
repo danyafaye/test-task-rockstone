@@ -1,3 +1,14 @@
-
+.note-form {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  /*  margin: 10px 750px 10px 750px;
+    padding: 40px 0 10px 0;*/
+  max-height: 200px;
+  padding: 5px;
+  left: 40%;
+  right: 40%;
+}
 
 /*# sourceMappingURL=Note.css.map */
