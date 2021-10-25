@@ -1,4 +1,7 @@
-# Test task by Rockstone. You can see the result here: 
+# Test task by Rockstone. 
+
+You can see the result here: https://danyafaye.github.io/test-task-rockstone/
+
 Реализовать “Виртуальный банкомат”:
 
 Необходимо сделать программу, которая будет принимать на вход некоторое значение
