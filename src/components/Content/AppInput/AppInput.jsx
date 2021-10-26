@@ -1,5 +1,6 @@
 import './AppInput.css';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 /*document.querySelector("input").addEventListener('keypress',
     function () {
@@ -7,8 +8,10 @@ import React from 'react';
     })*/
 
 const AppInput = () => {
-    return (
-        <input type="number" className="App-input"/>
+    return (<div className="app-input-form">
+            <input type="number" className="App-input"/>
+            <NavLink to="/output" className="app-input-to-output">ВЫДАЧА</NavLink>
+        </div>
     )
 }
 

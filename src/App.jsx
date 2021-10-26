@@ -15,7 +15,6 @@ const App = (state) => {
     input.addEventListener('onkeyup', () => {
         this.value = this.value.replace(/[^0-9\\,]/g, '');
     })*/
-    /*<Route path="/note" render={()=><Note/>}/>*/
     return (
         <div className="App-wrapper">
             <Header/>
