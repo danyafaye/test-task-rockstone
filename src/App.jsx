@@ -5,7 +5,6 @@ import AppInput from './components/Content/AppInput/AppInput';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Redirect, Route } from 'react-router-dom';
-import AppOutput from './components/Content/AppOutput/AppOutput';
 import BanknoteVars from './components/BanknoteVars/BanknoteVars';
 import Note from './components/Note/Note';
 
@@ -21,7 +20,6 @@ const App = (state) => {
             <div className="App-content">
                 <Redirect exact from="/" to="/app-input"/>
                 <Route path="/app-input" render={()=><AppInput/>}/>
-                <Route path="/output" render={()=><AppOutput/>}/>
                 <Route path="/vars" render={()=><BanknoteVars/>}/>
                 <Route path="/note" render={()=><Note/>}/>
                 <Numpad/>

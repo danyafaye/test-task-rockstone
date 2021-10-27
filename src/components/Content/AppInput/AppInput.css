@@ -1,4 +1,19 @@
-.App-input {
+.app-input-output-form {
+  position: relative;
+  display: grid;
+  grid-template-areas: "inp" "nump out";
+  grid-template-rows: 355px 1fr 1fr;
+  grid-template-columns: 100% 100% 100%;
+  max-width: 100%;
+  top: 15%;
+  height: 50%;
+}
+
+.app-input {
+  position: absolute;
+  grid-area: inp;
+  bottom: 40%;
+  left: 25%;
   width: 50%;
   font-family: "Segoe UI", serif;
   border: 1px solid #E9E9E9;
@@ -9,18 +24,37 @@
   padding: 10px 0 10px 0;
   font-size: 32px;
   background: #F7F5F2;
+  height: 70px;
 }
 
 .app-input-to-output {
+  position: absolute;
+  grid-area: inp;
   padding: 19px;
   background: #F7F5F2;
   border-radius: 20px;
   border: 2px solid #E9E9E9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 36%;
+  bottom: 40%;
+  left: 75%;
   margin: 3px 0 0 15px;
   font-family: Calibri, serif;
+  font-size: 24px;
+  color: #000000;
+  height: 70px;
+}
+
+.app-output-form {
+  left: 50%;
+  grid-area: out;
+  position: absolute;
+  top: 70%;
+  width: 50%;
+}
+
+.output-sum {
+  position: absolute;
+  bottom: 20%;
   font-size: 24px;
 }
 
