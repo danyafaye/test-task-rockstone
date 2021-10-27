@@ -1,3 +1,21 @@
+.app-numpad .app-numpad-last-block > button, .app-numpad .app-numpad-third-block > button, .app-numpad .app-numpad-second-block > button, .app-numpad .app-numpad-first-block > button {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: 84px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 35px;
+  font-size: 22px;
+  background: #F7F5F2;
+}
+
+.app-numpad, .app-input-to-output, .app-input {
+  background: #F7F5F2;
+  border: 2px solid #E9E9E9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
 .app-input-output-form {
   position: relative;
   display: grid;
@@ -14,15 +32,11 @@
   bottom: 40%;
   left: 25%;
   width: 50%;
-  font-family: "Segoe UI", serif;
-  border: 1px solid #E9E9E9;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 30vh 0 0 0;
   padding: 10px 0 10px 0;
   font-size: 32px;
-  background: #F7F5F2;
   height: 70px;
 }
 
@@ -30,16 +44,10 @@
   position: absolute;
   grid-area: inp;
   padding: 19px;
-  background: #F7F5F2;
-  border-radius: 20px;
-  border: 2px solid #E9E9E9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   bottom: 40%;
   left: 75%;
   margin: 3px 0 0 15px;
-  font-family: Calibri, serif;
   font-size: 24px;
-  color: #000000;
   height: 70px;
 }
 
@@ -62,66 +70,22 @@
   position: absolute;
   top: 65%;
   left: 32%;
-  border: 2px solid #E9E9E9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background: #F7F5F2;
-  border-radius: 20px;
 }
 .app-numpad .app-numpad-first-block {
   display: block;
-}
-.app-numpad .app-numpad-first-block > button {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  width: 84px;
-  margin: 2px;
-  border: 1px solid gray;
-  border-radius: 20px;
-  padding: 35px;
-  font-size: 22px;
-  background: #F7F5F2;
 }
 .app-numpad .app-numpad-second-block {
   display: block;
   border-radius: 20px;
 }
-.app-numpad .app-numpad-second-block > button {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  width: 84px;
-  margin: 2px;
-  border: 1px solid gray;
-  border-radius: 20px;
-  padding: 35px;
-  font-size: 22px;
-  background: #F7F5F2;
-}
 .app-numpad .app-numpad-third-block {
   display: block;
   border-radius: 20px;
-}
-.app-numpad .app-numpad-third-block > button {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  width: 84px;
-  margin: 2px;
-  border: 1px solid gray;
-  border-radius: 20px;
-  padding: 35px;
-  font-size: 22px;
-  background: #F7F5F2;
 }
 .app-numpad .app-numpad-last-block {
   display: block;
   border-radius: 20px;
   margin: 0 0 0 85px;
-}
-.app-numpad .app-numpad-last-block > button {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  width: 84px;
-  margin: 2px;
-  border: 1px solid gray;
-  border-radius: 20px;
-  padding: 35px;
-  font-size: 22px;
-  background: #F7F5F2;
 }
 
 /*# sourceMappingURL=AppInput.css.map */
