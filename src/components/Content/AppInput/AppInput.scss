@@ -1,5 +1,5 @@
 //перестилизовать кнопку и поле ввода в app-input-form app-input-form сделать position relative и расположить элементы относительно формы
-//добавить переменные для повторяющихся значений
+//добавить переменные, шаблоны для кнопок нампада для повторяющихся значений
 .app-input-output-form{
   position: relative;
   display: grid;
@@ -7,7 +7,6 @@
   grid-template-rows: 355px 1fr 1fr;
   grid-template-columns: 100% 100% 100%;
   max-width: 100%;
-  top: 15%;
   height: 50%;
 }
 
@@ -55,4 +54,70 @@
   position: absolute;
   bottom: 20%;
   font-size: 24px;
+}
+.app-numpad{
+  grid-area: nump;
+  position: absolute;
+  top:65%;
+  left:32%;
+  border: 2px solid #E9E9E9;
+  box-shadow: 0 0 10px rgba(0,0, 0, 0.5);
+  background: #F7F5F2;
+  border-radius: 20px;
+  .app-numpad-first-block{
+    display: block;
+    >button{
+      box-shadow: 0 0 3px rgba(0,0, 0, 0.5);
+      width: 84px;
+      margin: 2px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 35px;
+      font-size: 22px;
+      background: #F7F5F2;
+    }
+  }
+  .app-numpad-second-block{
+    display: block;
+    border-radius: 20px;
+    >button{
+      box-shadow: 0 0 3px rgba(0,0, 0, 0.5);
+      width: 84px;
+      margin: 2px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 35px;
+      font-size: 22px;
+      background: #F7F5F2;
+    }
+  }
+  .app-numpad-third-block{
+    display: block;
+    border-radius: 20px;
+    >button{
+      box-shadow: 0 0 3px rgba(0,0, 0, 0.5);
+      width: 84px;
+      margin: 2px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 35px;
+      font-size: 22px;
+      background: #F7F5F2;
+    }
+  }
+  .app-numpad-last-block{
+    display: block;
+    border-radius: 20px;
+    margin: 0 0 0 85px;
+    >button{
+      box-shadow: 0 0 3px rgba(0,0, 0, 0.5);
+      width: 84px;
+      margin: 2px;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 35px;
+      font-size: 22px;
+      background: #F7F5F2;
+    }
+  }
 }

@@ -5,7 +5,6 @@
   grid-template-rows: 355px 1fr 1fr;
   grid-template-columns: 100% 100% 100%;
   max-width: 100%;
-  top: 15%;
   height: 50%;
 }
 
@@ -56,6 +55,73 @@
   position: absolute;
   bottom: 20%;
   font-size: 24px;
+}
+
+.app-numpad {
+  grid-area: nump;
+  position: absolute;
+  top: 65%;
+  left: 32%;
+  border: 2px solid #E9E9E9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #F7F5F2;
+  border-radius: 20px;
+}
+.app-numpad .app-numpad-first-block {
+  display: block;
+}
+.app-numpad .app-numpad-first-block > button {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: 84px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 35px;
+  font-size: 22px;
+  background: #F7F5F2;
+}
+.app-numpad .app-numpad-second-block {
+  display: block;
+  border-radius: 20px;
+}
+.app-numpad .app-numpad-second-block > button {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: 84px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 35px;
+  font-size: 22px;
+  background: #F7F5F2;
+}
+.app-numpad .app-numpad-third-block {
+  display: block;
+  border-radius: 20px;
+}
+.app-numpad .app-numpad-third-block > button {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: 84px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 35px;
+  font-size: 22px;
+  background: #F7F5F2;
+}
+.app-numpad .app-numpad-last-block {
+  display: block;
+  border-radius: 20px;
+  margin: 0 0 0 85px;
+}
+.app-numpad .app-numpad-last-block > button {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: 84px;
+  margin: 2px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 35px;
+  font-size: 22px;
+  background: #F7F5F2;
 }
 
 /*# sourceMappingURL=AppInput.css.map */
