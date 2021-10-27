@@ -1,5 +1,4 @@
 import './components/styles/App.css';
-import Numpad from './components/Numpad/Numpad';
 import React from 'react';
 import AppInput from './components/Content/AppInput/AppInput';
 import Header from './components/Header/Header';
@@ -22,7 +21,6 @@ const App = (state) => {
                 <Route path="/app-input" render={()=><AppInput/>}/>
                 <Route path="/vars" render={()=><BanknoteVars/>}/>
                 <Route path="/note" render={()=><Note/>}/>
-                <Numpad/>
             </div>
             <Footer/>
         </div>
