@@ -1,15 +1,13 @@
 const VARS = 'APP/VARS';
 
 let initialState = {
-    var: [
-        {nv: 5000, q: 100},
-        {nv: 2000, q: 400},
-        {nv: 1000, q: 1000},
-        {nv: 500, q: 3000},
-        {nv: 200, q: 5000},
-        {nv: 100, q: 8000},
-        {nv: 50, q: 10000}
-    ]
+    var: {5000: 100,
+        2000: 400,
+        1000: 1000,
+        500: 3000,
+        200: 5000,
+        100: 8000,
+        50: 10000}
 }
 
 const varsReducer = (state = initialState, action) => {

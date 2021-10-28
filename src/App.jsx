@@ -9,10 +9,6 @@ import Note from './components/Note/Note';
 
 
 const App = (state) => {
-    /*const input = document.querySelector(".number")
-    input.addEventListener('onkeyup', () => {
-        this.value = this.value.replace(/[^0-9\\,]/g, '');
-    })*/
     return (
         <div className="App-wrapper">
             <Header/>
