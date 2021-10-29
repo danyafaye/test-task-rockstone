@@ -1,12 +1,13 @@
 import "./Note.css"
 import React from 'react';
-import NoteItem from './NoteItem';
 import { useSelector } from 'react-redux';
 
-let Note = (props) => {
-    let state = useSelector(state => state.varsR.var)
+let Note = () => {
+    let noteNominalVariants = useSelector(state => state.nominalVars.variant)
     return (
-        <p className="note-text">{<NoteItem nvname={Object.keys(state).map(Number).reverse()} qname={Object.values(state).map(Number).reverse()}/>}</p>
+        <p className="note-text">
+            {noteNominalVariants.map((nominalq)=><p>Купюра номиналом в {nominalq.nominalValues}р. в количестве: {nominalq.quantities}шт.</p>)}
+        </p>
     )
 }
 

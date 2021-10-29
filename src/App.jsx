@@ -7,8 +7,7 @@ import { Redirect, Route } from 'react-router-dom';
 import BanknoteVars from './components/BanknoteVars/BanknoteVars';
 import Note from './components/Note/Note';
 
-
-const App = (state) => {
+const App = () => {
     return (
         <div className="App-wrapper">
             <Header/>

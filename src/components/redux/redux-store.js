@@ -1,9 +1,9 @@
 import {combineReducers, createStore } from "redux"
-import varsReducer from './vars-reducer';
+import nominalVarsReducer from './vars-reducer';
 
 let reducers = combineReducers(
     {
-        varsR: varsReducer
+        nominalVars: nominalVarsReducer
     }
 )
 

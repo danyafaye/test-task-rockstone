@@ -1,20 +1,20 @@
 const VARS = 'APP/VARS';
 
 let initialState = {
-    var: {5000: 100,
-        2000: 400,
-        1000: 1000,
-        500: 3000,
-        200: 5000,
-        100: 8000,
-        50: 10000}
+    variant: [{nominalValues:5000, quantities: 100},
+        {nominalValues:2000, quantities: 400},
+        {nominalValues:1000, quantities: 1000},
+        {nominalValues:500, quantities: 3000},
+        {nominalValues:200, quantities: 5000},
+        {nominalValues:100, quantities: 8000},
+        {nominalValues:50, quantities: 10000}]
 }
 
-const varsReducer = (state = initialState, action) => {
+const nominalVarsReducer = (state = initialState, action) => {
     switch (action.type) {
         case VARS:
             let varsArray = action.newArray
-            return{
+            return {
                 var: varsArray
             }
         default:
@@ -25,4 +25,4 @@ const varsReducer = (state = initialState, action) => {
 //action creator
 export const replaceArray = (newArray) => ({type: 'APP/VARS', newArray})
 
-export default varsReducer;
+export default nominalVarsReducer;

@@ -1,6 +1,6 @@
 import './AppInput.css';
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import AppOutput from '../AppOutput/AppOutput';
 
 const AppInput = () => {
     const [val, setVal] = useState("");
@@ -50,55 +50,6 @@ const AppInput = () => {
             <AppOutput valOut={valOut}/>
         </div>
     )
-}
-
-const AppOutput = (props) => {
-    let state = useSelector(state => state.varsR.var)
-    if (props.valOut === "") return null;
-    let outputValue = props.valOut
-    String.prototype.replaceAt = function (index, replacement) {
-        return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-    }
-    if (outputValue.includes(",")) {
-        let index = outputValue.indexOf(",")
-        let newValue = outputValue.slice(index + 1)
-        return (
-            <div className="app-output-form">
-                <p className="output-sum">Введенная
-                    сумма: {Math.trunc(outputValue.replaceAt(index, "."))} руб., {newValue} коп. </p>
-                {console.log(outputAlgorithm(outputValue, state))}
-            </div>
-        )
-    } else {
-        return (
-            <div className="app-output-form">
-                <p className="output-sum">Введенная сумма: {outputValue} руб.</p>
-                {console.log(outputAlgorithm(outputValue, state))}
-            </div>
-        )
-    }
-}
-
-const outputAlgorithm = (num, vars) => {
-    let collect = (amount, nominals) => {
-        if(amount === 0) return {}
-        if(!nominals.length) return;
-
-        let currentNominal = nominals[0];
-        let availableNotes = vars[currentNominal]
-        let notesNeeded = Math.floor(amount/currentNominal);
-        let numberOfNotes = Math.min(availableNotes, notesNeeded)
-
-        for(let i = numberOfNotes; i>=0;i--){
-            let result = collect(amount-i*currentNominal, nominals.slice(1));
-            if (result){
-                return i ? {[currentNominal]: i, ...result} : result;
-            }
-        }
-    }
-    let nomin = Object.keys(vars).map(Number).sort((a,b)=>b-a) //вместо сортировки надо чтобы вычислял номиналы где кол-во купюр больше всех(тоже можно сделать с помощью сортировки от большего к меньшему)
-
-    return collect(num, nomin)
 }
 
 export default AppInput;
