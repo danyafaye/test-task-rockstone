@@ -16,6 +16,7 @@ const AppInput = () => {
             e.preventDefault()
             e.stopPropagation()
             setValOut(val)
+            setInputVal("")
         }
     }
     const buttonClick = (e) => {
@@ -23,9 +24,13 @@ const AppInput = () => {
         setInputVal(inputVal + bttnVal)
         setVal(inputVal + bttnVal)
     }
+    const outputValueButtonClick = () => {
+        setValOut(val)
+        setInputVal("")
+    }
     return (<div className="app-input-output-form">
             <input type="text" className="app-input" value={inputVal} onChange={handlerChange} onKeyDown={onKeyDown}/>
-            <button className="app-input-to-output" onClick={() => setValOut(val)}>ВЫДАЧА</button>
+            <button className="app-input-to-output" onClick={outputValueButtonClick}>ВЫДАЧА</button>
             <div className="app-numpad">
                 <div className="app-numpad-first-block">
                     <button value={1} onClick={buttonClick}>1</button>
@@ -47,7 +52,7 @@ const AppInput = () => {
                     <button value={","} onClick={buttonClick}>,</button>
                 </div>
             </div>
-            <AppOutput valOut={valOut}/>
+            <AppOutput valOut={valOut} setInputVal={setInputVal}/>
         </div>
     )
 }

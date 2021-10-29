@@ -15,7 +15,7 @@ const nominalVarsReducer = (state = initialState, action) => {
         case VARS:
             let varsArray = action.newArray
             return {
-                var: varsArray
+                variant: varsArray
             }
         default:
             return state;
